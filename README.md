@@ -17,6 +17,6 @@ Download:
 
 # Update
 
-    wget https://raw.githubusercontent.com/adamvallee/dug/main/dug.sh -O dug.sh
+    rm -fr dug.sh && wget https://raw.githubusercontent.com/adamvallee/dug/main/dug.sh && sudo chmod +x dug.sh
 
 
