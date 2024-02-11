@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Version: 1.0.10
-# Date: 2024-01-21
+# Version: 1.0.11
+# Date: 2024-01-22
 # Author: Adam Vallee
 # Source: https://github.com/adamvallee/dug
 
