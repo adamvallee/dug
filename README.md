@@ -15,5 +15,6 @@ Get It
 
 Download using the following command:
 
-wget https://raw.githubusercontent.com/adamvallee/dug/main/dug.sh && sudo chmod +x dug.sh
+     wget https://raw.githubusercontent.com/adamvallee/dug/main/dug.sh && sudo chmod +x dug.sh
+
 
