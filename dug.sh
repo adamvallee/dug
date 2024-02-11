@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Version: 1.0.6
-# Date: 2024-01-17
+# Version: 1.0.7
+# Date: 2024-01-18
 # Author: Adam Vallee
 # Source: https://github.com/adamvallee/dug
 
@@ -21,6 +21,9 @@ fi
 # Check if 'cf' was passed as an argument
 if [ "$arg1" = "cf" ]; then
     server="@1.1.1.1"
+    shift
+elif [ "$arg1" = "g" ]; then
+    server="@8.8.8.8"
     shift
 else
     server=""
