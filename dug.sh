@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Version: 1.0.11
-# Date: 2024-01-22
+# Version: 1.0.13
+# Date: 2024-01-23
 # Author: Adam Vallee
 # Source: https://github.com/adamvallee/dug
 
@@ -25,13 +25,17 @@ while (( "$#" )); do
     "mx")
       record_type="MX"
       ;;
+    "txt")
+      record_type="TXT"
+      ;;
     "help")
-      echo "Usage: ./dug.sh [s] [cf|g] [mx] domain_name"
+      echo "Usage: ./dug.sh [s] [cf|g] [mx|txt] domain_name"
       echo "Options:"
       echo "  s: Use +short option with dig"
       echo "  cf: Use @1.1.1.1 server with dig"
       echo "  g: Use @8.8.8.8 server with dig"
       echo "  mx: Use MX record type with dig"
+      echo "  txt: Use TXT record type with dig"
       echo "  domain_name: The domain to query"
       exit 0
       ;;
