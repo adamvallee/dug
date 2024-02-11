@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Version: 1.0.8
-# Date: 2024-01-19
+# Version: 1.0.10
+# Date: 2024-01-21
 # Author: Adam Vallee
 # Source: https://github.com/adamvallee/dug
 
@@ -24,6 +24,16 @@ while (( "$#" )); do
       ;;
     "mx")
       record_type="MX"
+      ;;
+    "help")
+      echo "Usage: ./filename [s] [cf|g] [mx] domain_name"
+      echo "Options:"
+      echo "  s: Use +short option with dig"
+      echo "  cf: Use @1.1.1.1 server with dig"
+      echo "  g: Use @8.8.8.8 server with dig"
+      echo "  mx: Use MX record type with dig"
+      echo "  domain_name: The domain to query"
+      exit 0
       ;;
     *)
       # If the argument is not one of the options, assume it is the domain name
