@@ -26,7 +26,7 @@ while (( "$#" )); do
       record_type="MX"
       ;;
     "help")
-      echo "Usage: ./filename [s] [cf|g] [mx] domain_name"
+      echo "Usage: ./dug.sh [s] [cf|g] [mx] domain_name"
       echo "Options:"
       echo "  s: Use +short option with dig"
       echo "  cf: Use @1.1.1.1 server with dig"
